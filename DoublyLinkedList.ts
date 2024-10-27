@@ -54,6 +54,8 @@ export default class DoublyLinkedList<T> {
         node.next = curr;
         node.prev = curr.prev;
         curr.prev = node
+
+        // handling edge case
         if (curr.prev) {
             curr.prev.next = curr;
         }
