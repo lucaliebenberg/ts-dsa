@@ -5,7 +5,13 @@
 export default class ArrayList {
     constructor() {}
 
-    private enqueue(item: number): void {}
+    push(item: number): void {}
 
-    private dequeue(item: number): void {}
+    pop(item: number): void {}
+
+    get(idx: number): number | undefined {}
+
+    delete(idx: number): void {}
+
+    resize(): number[] {}
 }
