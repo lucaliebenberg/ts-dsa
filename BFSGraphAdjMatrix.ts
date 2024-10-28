@@ -1,3 +1,9 @@
+/**
+ * BFS Graph Matrix implementation
+ */
+
+declare type WeightedAdjacencyMatrix = number[][];
+
 export default function bfs(
     graph: WeightedAdjacencyMatrix,
     source: number,
@@ -51,4 +57,6 @@ export default function bfs(
     if (out.length) {
         return [source].concat(out.reverse());
     }
+
+    return out;
 }
